@@ -5,7 +5,12 @@ const Home: React.FC = () => {
     return (
         <div>
             <NavBar />
+
+            <div>
+                <h1>Home</h1>
+            </div>
         </div>
+        
     );
 }
 
