@@ -2,12 +2,13 @@ import React from "react";
 import NavBar from "../../components/molecules/navBar";
 
 const Home: React.FC = () => {
+   
     return (
-        <div>
+        <div className="">
             <NavBar />
 
-            <div>
-                <h1>Home</h1>
+            <div className="h-screen bg-tertiary">
+             
             </div>
         </div>
         
