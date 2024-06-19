@@ -92,7 +92,7 @@ const JobForm: React.FC = () => {
                     />
                 </div>
 
-                <Button type="submit">Anunciar Vaga</Button>
+                <Button type="submit">Anunciar vaga</Button>
 
             </form>
         </div>
