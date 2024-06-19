@@ -6,9 +6,18 @@ export default {
   ],
   theme: {
     extend: {
+
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
       },
+
+      colors: {
+        primary: '#42CFAA', //verde claro
+        secondary: '#50A58E', //verde medio
+        tertiary: '#2A3331', //verde escuro
+        navBar: '#507A6F'
+      },
+      
     },
     plugins: [],
   }

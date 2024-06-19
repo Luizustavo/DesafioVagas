@@ -1,20 +1,26 @@
 import React from 'react';
+import Typography from '../typography';
 
 interface InputProps {
-  type: string;
-  placeholder: string;
+  label: string;
+  type: 'text' | 'number';
+  value: string | number;
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
 }
 
-const Input: React.FC<InputProps> = ({ type, placeholder }) => {
+const Input: React.FC<InputProps> = ({ label, type, value, onChange, className = '' }) => {
   return (
-    <div >
+    <div className={`flex flex-col mb-2  ${className}`}>
+      <Typography variant="subtitle">{label}</Typography>
       <input
         type={type}
-        placeholder={placeholder}
-        className="border border-gray-300 rounded	p-2 w-6/12 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        value={value}
+        onChange={onChange}
+        className="border p-2 w-full"
       />
     </div>
   );
-}
+};
 
 export default Input;

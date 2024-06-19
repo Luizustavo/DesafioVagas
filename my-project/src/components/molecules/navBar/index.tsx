@@ -1,17 +1,28 @@
 import React from "react";
-import Button from "../../atoms/button";
 import { Link } from "react-router-dom";
+import Typography from "../../atoms/typography";
 
 
 const NavBar: React.FC = () => {
     return (
-        <div className="flex flex-row justify-between items-center bg-blue-900 p-5">
+        <div className="flex flex-row justify-between items-center bg-navBar p-5">
             <div className="flex flex-row items-center">
+
+
                 <Link to="/" className="flex flex items-center justify-center">
-                    <span className="text-2xl text-white ml-2 font-roboto " >VAGAS DE EMPREGO</span>
+                    <Typography variant="title">JobsTech</Typography>
                 </Link>
-                <span className="text-2xl ml-96 text-white"><Button text="Publicar Vagas" to="/jobs" /></span>
-                <span className="text-2xl ml-56 text-white"><Button text="Gerenciar Vagas" to="/users" /></span>
+
+                <Link to="/jobs" className="text-2xl ml-96 text-white" >
+                    <Typography variant="subtitle"> Publicar Vagas</Typography>
+                </Link>
+
+                <Link to="/users" className="text-2xl ml-96 text-white" >
+                    <Typography variant="subtitle"> Gerenciar Vagas</Typography>
+                </Link>
+
+                <img className="w-10 ml-60" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/2048px-Hamburger_icon.svg.png" alt="menu" />
+                
             </div>
         </div>
     );
