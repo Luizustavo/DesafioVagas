@@ -69,7 +69,7 @@ const JobList: React.FC = () => {
 
         <ul>
           {vagas.map((vaga) => (
-            <li key={vaga._id} className="border p-2 mb-2">
+            <li key={vaga._id} className="border border-green-900 p-2 mb-2">
 
               <Typography variant="text">Cargo: {vaga.cargo}</Typography>
               <Typography variant="text">Código da vaga: {vaga._id}</Typography>
@@ -80,7 +80,7 @@ const JobList: React.FC = () => {
               <Typography variant="text">Local de Trabalho: {vaga.localTrabalho}</Typography>
               <br />
               <Button onClick={() => handleEncerrar(vaga._id)} className="mr-2">Encerrar</Button>
-              <Button onClick={() => handleDelete(vaga._id)} className="bg-red-500 hover:bg-red-700">Deletar</Button>
+              <Button onClick={() => handleDelete(vaga._id)}>Deletar</Button>
 
             </li>
           ))}

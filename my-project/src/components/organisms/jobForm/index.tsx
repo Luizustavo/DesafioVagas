@@ -35,7 +35,7 @@ const JobForm: React.FC = () => {
 
             <div className="m-16 max-w-lg">
                 <Typography variant="title">Bem Vindo!</Typography>
-                <Typography variant="subtitle">Obrigado por ter escolhido o Vagas de Emprego para anunciar sua vaga</Typography>
+                <Typography variant="subtitle">Obrigado por ter escolhido o JobsTech para anunciar sua vaga</Typography>
             </div>
 
             <form onSubmit={handleSubmit} className="p-4 max-w-lg mx-auto text-center">
