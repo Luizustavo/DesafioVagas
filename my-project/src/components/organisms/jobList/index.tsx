@@ -51,7 +51,7 @@ const JobList: React.FC = () => {
 
   return (
 
-    <div className='h-screen bg-tertiary'>
+    <div className=' bg-tertiary'>
 
       <NavBar />
 
